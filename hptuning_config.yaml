@@ -6,15 +6,15 @@ trainingInput:
         hyperparameterMetricTag: loss
         enableTrialEarlyStopping: FALSE 
 
-    params:
-        - parameterName: epochs
-          type: INTEGER 
-          minValue: 100
-          maxValue: 10000
-          scaleType: UNIT_LINEAR_SCALE
+        params:
+            - parameterName: epochs
+              type: INTEGER 
+              minValue: 100
+              maxValue: 10000
+              scaleType: UNIT_LINEAR_SCALE
 
-        - parameterName: lr
-          type: DOUBLE
-          minValue:  0.001
-          maxValue:  0.009
-          scaleType: UNIT_LINEAR_SCALE
+            - parameterName: lr
+              type: DOUBLE
+              minValue:  0.001
+              maxValue:  0.009
+              scaleType: UNIT_LINEAR_SCALE
