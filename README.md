@@ -5,10 +5,12 @@ Perform Hyperparameter tuning on a small Regression problem using TensorFlow 2
 * Setup environment variables
 
 ```
+export REGION=us-central1
 export PROJECT_ID=$(gcloud config list project --format "value(core.project)")
 export IMAGE_REPO_NAME=gcp_vertex_ai_hyperparameter_tuning_tf
 export IMAGE_TAG=latest
 export IMAGE_URI=us-central1-docker.pkg.dev/$PROJECT_ID/$IMAGE_REPO_NAME:$IMAGE_TAG
+gcloud auth configure-docker $REGION-docker.pkg.dev
 ```
 
 * Build Docker image
@@ -27,7 +29,6 @@ In the `hptuning_config.yaml` you add the parameters to optimize with your hyper
 
 Initialize input variables
 ```
-export REGION=us-central1
 export JOB_NAME=gcp_vertex_ai_hyperparameter_tuning_tf
 ```
 Submit the jobs
