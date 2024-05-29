@@ -21,4 +21,4 @@ trialJobSpec:
       machineType: n1-standard-4
     replicaCount: 1
     containerSpec:
-      imageUri: us-central1-docker.pkg.dev/my-web-page-230207/gcp_vertex_ai_hyperparameter_tuning_tf:latest
+      imageUri: us-central1-docker.pkg.dev/my-web-page-230207/gcp-vertex-ai-hyperparameter-tuning-tf/gcp-vertex-ai-hyperparameter-tuning-tf:latest
