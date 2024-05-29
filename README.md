@@ -28,7 +28,7 @@ In the `hptuning_config.yaml` you add the parameters to optimize with your hyper
 Initialize input variables
 ```
 export REGION=us-central1
-export JOB_NAME=gcp_vertex_ai_hyperparameter_tuning_tf_$(date +%Y%m%d_%H%M%S)
+export JOB_NAME=gcp_vertex_ai_hyperparameter_tuning_tf
 ```
 Submit the jobs
 <pre><code>
