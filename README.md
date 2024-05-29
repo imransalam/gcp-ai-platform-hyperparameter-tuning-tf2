@@ -7,7 +7,7 @@ Perform Hyperparameter tuning on a small Regression problem using TensorFlow 2
 ```
 export PROJECT_ID=$(gcloud config list project --format "value(core.project)")
 export IMAGE_REPO_NAME=gcp_vertex_ai_hyperparameter_tuning_tf
-export IMAGE_TAG=gcp_vertex_ai_hyperparameter_tuning_tf_image
+export IMAGE_TAG=latest
 export IMAGE_URI=us-central1-docker.pkg.dev/$PROJECT_ID/$IMAGE_REPO_NAME:$IMAGE_TAG
 ```
 
